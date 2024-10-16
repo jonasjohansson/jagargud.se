@@ -8,15 +8,20 @@
         body {
             margin: 0;
             background-color: #0000FF;
+            overflow: hidden; /* Prevents scrollbars */
         }
         .img {
-            width: 100vw;
-            height: 100vh;
+            width: calc(100vw - 20px); /* 10px padding on each side */
+            height: calc(100vh - 20px); /* 10px padding on top and bottom */
             object-fit: cover;
+            padding: 10px;
+            box-sizing: border-box;
         }
     </style>
 </head>
-<body onclick="window.location.href='https://kulturhusetstadsteatern.se/teater/jag-ar-gud';">
-    <img src="jagargud.png">
+<body>
+    <a href="https://kulturhusetstadsteatern.se/teater/jag-ar-gud">
+        <img src="jagargud.png" class="img" alt="Jag är Gud">
+    </a>
 </body>
 </html>
