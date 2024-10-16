@@ -9,11 +9,20 @@
             margin: 0;
             background-color: #0000FF;
             overflow: hidden; /* Prevents scrollbars */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .img {
-            width: calc(100vw - 20px); /* 10px padding on each side */
-            height: calc(100vh - 20px); /* 10px padding on top and bottom */
-            object-fit: cover;
+        a {
+            display: block;
+            width: calc(100vw - 20px); /* Adds 10px padding on each side */
+            height: calc(100vh - 20px); /* Adds 10px padding top and bottom */
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures image always fits within the viewport */
             padding: 10px;
             box-sizing: border-box;
         }
